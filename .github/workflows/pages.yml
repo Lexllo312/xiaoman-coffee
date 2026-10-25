@@ -31,14 +31,14 @@ jobs:
         run: node scripts/fetch-images.mjs
 
       - name: Structure tests
-        run: pnpm test
+        run: npm test
 
       - uses: actions/configure-pages@v5
         with:
           enablement: true
 
       - name: Build for project pages
-        run: pnpm build
+        run: npm run build
         env:
           GITHUB_PAGES_BASE: /${{ github.event.repository.name }}/
 
