@@ -1,0 +1,86 @@
+/* 小满咖啡：全站共用的颜色、字体和基础排版。 */
+
+:root {
+  --paper: #f7f3ec;
+  --paper-deep: #efe8dc;
+  --card: #fffdf9;
+  --ink: #201b16;
+  --ink-soft: #4a4238;
+  --ink-faint: #8a8073;
+  --line: #ded4c4;
+  --bean: #6f4a2f;
+  --bean-deep: #4c3220;
+  --danger: #a8452f;
+  --font-serif: 'Songti SC', 'Noto Serif SC', Georgia, serif;
+  --font-sans: system-ui, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --shell: 1180px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.shell {
+  width: min(100% - 48px, var(--shell));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  color: var(--ink-faint);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--bean);
+  outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .shell {
+    width: min(100% - 32px, var(--shell));
+  }
+}

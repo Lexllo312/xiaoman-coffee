@@ -1,0 +1,22 @@
+{
+  "name": "xiaoman-coffee",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "小满咖啡 —— 独立烘焙品牌官网与在线点单（Vue 3 课程作业）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/copy-404.mjs",
+    "preview": "vite preview --port 4173",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "pinia": "^3.0.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.7"
+  }
+}

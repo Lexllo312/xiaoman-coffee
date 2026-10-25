@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA 路由回退：/menu、/cart 这类前端路由直接刷新时也能命中 index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

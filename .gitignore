@@ -1,0 +1,33 @@
+# 依赖与构建产物
+node_modules/
+dist/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 运行时下载的商品图片（GitHub Actions 构建时由 scripts/fetch-images.mjs 拉取）
+public/images/*.jpg
+public/images/*.webp
+!public/images/SOURCES.json
+
+# 截图脚本的临时浏览器配置
+.chrome-shot-profile/
+.chrome-verify-profile/
+
+# 本地报告截图，不随站点仓库发布
+docs/screenshots/
+
+# 报告生成的中间文件
+docs/_*.pdf
+docs/_*.png
+
+# 待删区（见全局 AGENTS.md 的删除纪律）
+_trash/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
