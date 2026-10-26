@@ -4,7 +4,7 @@ import MenuView from '@/views/MenuView.vue'
 import CartView from '@/views/CartView.vue'
 
 const router = createRouter({
-  // GitHub Pages 项目站点需要和 Vite 的 base 保持一致。
+  // 使用 Vite 的 BASE_URL，静态托管到子路径时前端路由也能正确匹配。
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: HomeView },
