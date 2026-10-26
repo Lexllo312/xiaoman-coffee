@@ -19,10 +19,15 @@ public/images/*.webp
 
 # 本地报告截图，不随站点仓库发布
 docs/screenshots/
+docs/report-figs/
 
 # 报告生成的中间文件
 docs/_*.pdf
 docs/_*.png
+
+# 本地个人记忆，禁止上传公开仓库
+项目记忆.md
+.deepseek-harness/
 
 # 待删区（见全局 AGENTS.md 的删除纪律）
 _trash/
