@@ -30,9 +30,6 @@ jobs:
       - name: Download product images
         run: node scripts/fetch-images.mjs
 
-      - name: Structure tests
-        run: npm test
-
       - name: Build for GitHub Pages
         run: npm run build
         env:

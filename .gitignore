@@ -29,6 +29,19 @@ docs/_*.png
 项目记忆.md
 .deepseek-harness/
 
+# 公开仓库只保留运行所需文件
+AGENTS.md
+docs/
+netlify.toml
+pnpm-lock.yaml
+pnpm-workspace.yaml
+public/_redirects
+public/images/SOURCES.json
+scripts/build_report_3page.py
+scripts/shoot.mjs
+scripts/verify.mjs
+tests/
+
 # 待删区（见全局 AGENTS.md 的删除纪律）
 _trash/
 
